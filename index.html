@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Message for You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Mute Toggle Button -->
+  <button id="mute-toggle" class="mute-toggle">&#128264;</button>
+
+  <!-- Orientation & Audio Prompt Overlay -->
+  <div id="orientation-overlay">
+    <div class="overlay-content">
+      <p>Please turn on audio and rotate to landscape for the desired experience.</p>
+      <p>An even better experience is on your MacBook air.</p>
+      <div id="duration-bar"></div>
+      <p class="rotate-icon">&#x21bb;</p>
+    </div>
+  </div>
+
+  <!-- Hidden Background Music Audio Element -->
+  <audio id="bg-music" preload="auto"></audio>
+  
+  <!-- Main Content Container -->
+  <div id="main-content" style="display: none;">
+    <!-- Section: Song Selection -->
+    <section id="section-song" class="section">
+      <div class="song-selection-container">
+        <h2>Select Your Song</h2>
+        <form id="song-form">
+          <label><input type="radio" name="song" value="october.mp3"> We fell in love in October</label><br>
+          <label><input type="radio" name="song" value="sailor.mp3"> Sailor Song</label><br>
+          <label><input type="radio" name="song" value="close.mp3"> Close to You</label><br>
+          <label><input type="radio" name="song" value="Indecision.mp3"> Indecision</label><br>
+          <label><input type="radio" name="song" value="married.mp3"> Married Life</label><br>
+          <button type="button" id="confirm-song">Confirm</button>
+          <button type="button" id="snippet-btn">&#128266;</button>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Section 1: Greetings Animation -->
+    <section id="section-greetings" class="section">
+      <div class="greetings-container">
+        <img class="greeting-img" src="dear.png" alt="Dear">
+        <img class="greeting-img" src="angel.png" alt="Angel">
+        <img class="greeting-img" src="sweetie.png" alt="Sweetie">
+        <img class="greeting-img" src="darling.png" alt="Darling">
+        <img class="greeting-img" src="my_love.png" alt="My Love">
+        <img class="greeting-img" src="honey.png" alt="Honey">
+        <img class="greeting-img" src="cutie_pie.png" alt="Cutie Pie">
+        <img class="greeting-img" src="madison.png" alt="Madison">
+      </div>
+      <div class="scroll-prompt delayed">
+        <span>scroll for more</span> <span class="down-arrow">&#x2193;</span>
+      </div>
+    </section>
+
+    <!-- Section 2: "Us" Page with Overlaid Heart -->
+    <section id="section-heart" class="section">
+      <div class="heart-overlay-container">
+        <!-- The base "us" image -->
+        <img class="us-img fade-sequence" src="us.png" alt="Us">
+        <!-- Overlaid heart image -->
+        <img class="heart-img fade-sequence" src="heart.png" alt="Heart">
+      </div>
+      <div class="scroll-prompt delayed">
+        <span>scroll for more</span> <span class="down-arrow">&#x2193;</span>
+      </div>
+    </section>
+
+    <!-- Section 3: Letter & Horizontal Photo Gallery -->
+    <section id="section-letter" class="section">
+      <div class="letter-container">
+        <!-- Letter text takes the top third of the screen -->
+        <div class="letter-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+            Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh 
+            elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue 
+            semper porta.
+          </p>
+          <div class="scroll-prompt delayed">
+            <span>scroll for more</span> <span class="down-arrow">&#x2193;</span>
+          </div>
+        </div>
+        <!-- Horizontal scrolling gallery below the text -->
+        <div class="letter-gallery">
+          <div class="gallery-scroll">
+            <img class="gallery-img" src="together11.png" alt="Together 11">
+            <img class="gallery-img" src="together12.png" alt="Together 12">
+            <img class="gallery-img" src="together13.png" alt="Together 13">
+            <img class="gallery-img" src="together14.png" alt="Together 14">
+            <img class="gallery-img" src="together15.png" alt="Together 15">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Final Change -->
+    <section id="section-final" class="section">
+      <div class="final-container">
+        <img class="final-img" src="change.png" alt="Final Change">
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
